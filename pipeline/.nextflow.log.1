@@ -1,0 +1,159 @@
+May-11 22:17:43.705 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile standard,apptainer
+May-11 22:17:43.793 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+May-11 22:17:43.817 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/user/gent/490/vsc49038/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+May-11 22:17:43.829 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-11 22:17:43.831 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-11 22:17:43.834 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+May-11 22:17:43.847 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-11 22:17:43.870 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/nextflow.config
+May-11 22:17:43.873 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/nextflow.config
+May-11 22:17:43.911 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /user/gent/490/vsc49038/.nextflow/secrets/store.json
+May-11 22:17:43.915 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6d025d1d] - activable => nextflow.secret.LocalSecretsProvider@6d025d1d
+May-11 22:17:43.922 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard,apptainer`
+May-11 22:17:44.587 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, apptainer, docker]
+May-11 22:17:44.615 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+May-11 22:17:44.621 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [dreamy_hodgkin] DSL2 - revision: 01d450bbde
+May-11 22:17:44.622 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-11 22:17:44.622 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-11 22:17:44.687 [main] DEBUG nextflow.Session - Session UUID: a1567279-00d6-4a2a-93e9-8554adfa0dab
+May-11 22:17:44.687 [main] DEBUG nextflow.Session - Run name: dreamy_hodgkin
+May-11 22:17:44.688 [main] DEBUG nextflow.Session - Executor pool size: 4
+May-11 22:17:44.697 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-11 22:17:44.704 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-11 22:17:44.724 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (08:19 CEST)
+  System: Linux 5.14.0-427.50.1.el9_4.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.20+8
+  Encoding: UTF-8 (UTF-8)
+  Process: 272298@node4010.donphan.os [10.141.6.139]
+  CPUs: 4 - Mem: 754 GB (702.3 GB) - Swap: 20 GB (20 GB)
+May-11 22:17:44.746 [main] DEBUG nextflow.Session - Work-dir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work [gpfs]
+May-11 22:17:44.825 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+May-11 22:17:44.842 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-11 22:17:44.847 [main] DEBUG nextflow.Session - Observer factory: WaveFactory
+May-11 22:17:44.848 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+May-11 22:17:44.875 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-11 22:17:44.888 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+May-11 22:17:44.952 [main] DEBUG nextflow.Session - Session start
+May-11 22:17:45.325 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-11 22:17:46.121 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:low` matches labels `low` for process with name THERMORAWFILEPARSER
+May-11 22:17:46.124 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:THERMORAWFILEPARSER` matches process THERMORAWFILEPARSER
+May-11 22:17:46.139 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-11 22:17:46.139 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-11 22:17:46.144 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-11 22:17:46.150 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=754 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+May-11 22:17:46.154 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-11 22:17:46.252 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:high` matches labels `high` for process with name DIANN_PREDICTOR
+May-11 22:17:46.252 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DIANN_PREDICTOR` matches process DIANN_PREDICTOR
+May-11 22:17:46.253 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-11 22:17:46.253 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-11 22:17:46.287 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:high` matches labels `high` for process with name DIANN_SEARCH
+May-11 22:17:46.290 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-11 22:17:46.290 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-11 22:17:46.308 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COMBINE_STATS` matches process COMBINE_STATS
+May-11 22:17:46.309 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-11 22:17:46.310 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-11 22:17:46.314 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: DIANN_PREDICTOR, DIANN_SEARCH, COMBINE_STATS, THERMORAWFILEPARSER
+May-11 22:17:46.316 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+May-11 22:17:46.325 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > THERMORAWFILEPARSER
+May-11 22:17:46.328 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DIANN_PREDICTOR
+May-11 22:17:46.329 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DIANN_SEARCH
+May-11 22:17:46.331 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COMBINE_STATS
+May-11 22:17:46.332 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_2645d31a70c3c152: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/./modules/combine_stats.nf
+  Script_93241e8be49944c1: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/./modules/diann_search.nf
+  Script_48cb235832c41cf7: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/./modules/diann_predictor.nf
+  Script_d1fc2b1bddef03b9: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/./modules/nf-core/thermorawfileparser/main.nf
+  Script_fc78e12901f401c1: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/main.nf
+May-11 22:17:46.332 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-11 22:17:46.332 [main] DEBUG nextflow.Session - Session await
+May-11 22:17:46.490 [Actor Thread 5] DEBUG i.s.wave.plugin.config.WaveConfig - Wave strategy not specified - using default: [container, dockerfile, conda, spack]
+May-11 22:17:46.498 [Actor Thread 5] DEBUG io.seqera.wave.plugin.WaveClient - Wave config: WaveConfig(enabled:null, endpoint:https://wave.seqera.io, containerConfigUrl:[], tokensCacheMaxDuration:30m, condaOpts:CondaOpts(mambaImage=mambaorg/micromamba:1.5.8-lunar; basePackages=conda-forge::procps-ng, commands=null), spackOpts:SpackOpts(basePackages=null, commands=null), strategy:[container, dockerfile, conda, spack], bundleProjectResources:null, buildRepository:null, cacheRepository:null, retryOpts:RetryOpts(delay:450ms, maxDelay:1m 30s, maxAttempts:10, jitter:0.25), httpClientOpts:HttpOpts(), freezeMode:null, preserveFileTimestamp:null)
+May-11 22:17:46.617 [Actor Thread 1] DEBUG nextflow.container.SingularityCache - Apptainer found local store for image=docker://biocontainers/diann:1.8.1_cv2; path=/scratch/gent/490/vsc49038/.apptainer_cache/biocontainers-diann-1.8.1_cv2.img
+May-11 22:17:46.617 [Actor Thread 7] DEBUG nextflow.container.SingularityCache - Apptainer found local store for image=docker://quay.io/biocontainers/thermorawfileparser:1.4.5--h05cac1d_1; path=/scratch/gent/490/vsc49038/.apptainer_cache/quay.io-biocontainers-thermorawfileparser-1.4.5--h05cac1d_1.img
+May-11 22:17:46.750 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-11 22:17:46.752 [Task submitter] INFO  nextflow.Session - [33/1850e6] Submitted process > DIANN_PREDICTOR (1)
+May-11 22:22:46.352 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:22:46.833 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:27:46.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:27:46.891 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:32:46.398 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:32:46.943 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:37:46.494 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:37:46.995 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:42:46.571 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:42:47.043 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:47:46.643 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:47:47.084 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:52:46.732 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:52:47.129 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+~> TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:55:11.672 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DIANN_PREDICTOR (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/33/1850e6cf884e824c81be0a5aa55c38]
+May-11 22:55:11.673 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-11 22:55:11.682 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-11 22:55:11.684 [Task submitter] INFO  nextflow.Session - [5c/628ebc] Submitted process > THERMORAWFILEPARSER (240311_1p)
+May-11 22:55:11.692 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-11 22:55:11.693 [Task submitter] INFO  nextflow.Session - [d7/013a83] Submitted process > THERMORAWFILEPARSER (240428_1p)
+May-11 22:55:11.710 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-11 22:56:58.317 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: THERMORAWFILEPARSER (240428_1p); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/d7/013a83a6a35dc0e59ce5fea8aaf4a8]
+May-11 22:57:12.828 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: THERMORAWFILEPARSER (240311_1p); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/5c/628ebce5452ada1e704f01bb301cd6]
+May-11 22:57:12.840 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-11 22:57:12.840 [Task submitter] INFO  nextflow.Session - [f9/c31cc0] Submitted process > DIANN_SEARCH (1)
+May-11 22:57:46.746 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: DIANN_SEARCH (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/f9/c31cc0fcd13cce732649e95c91c6da]
+May-11 22:57:47.853 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:02:46.838 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: DIANN_SEARCH (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/f9/c31cc0fcd13cce732649e95c91c6da]
+May-11 23:02:47.894 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:07:46.919 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: DIANN_SEARCH (1); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/f9/c31cc0fcd13cce732649e95c91c6da]
+May-11 23:07:47.938 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: NEW; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:12:15.152 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: DIANN_SEARCH (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/f9/c31cc0fcd13cce732649e95c91c6da]
+May-11 23:12:15.158 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-11 23:12:15.159 [Task submitter] INFO  nextflow.Session - [08/3cb8b4] Submitted process > DIANN_SEARCH (2)
+May-11 23:12:46.980 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:17:47.071 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:22:47.147 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:27:47.215 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 5; name: DIANN_SEARCH (2); status: RUNNING; exit: -; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:30:50.742 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: DIANN_SEARCH (2); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/08/3cb8b4b1915a4aaabb3c79f32b99d2]
+May-11 23:30:50.755 [Actor Thread 4] DEBUG nextflow.container.SingularityCache - Apptainer found local store for image=docker://docker.io/rocker/tidyverse; path=/scratch/gent/490/vsc49038/.apptainer_cache/docker.io-rocker-tidyverse.img
+May-11 23:30:50.768 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-11 23:30:50.768 [Task submitter] INFO  nextflow.Session - [4f/2a595a] Submitted process > COMBINE_STATS
+May-11 23:30:55.750 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: COMBINE_STATS; status: COMPLETED; exit: 0; error: -; workDir: /kyukon/data/gent/490/vsc49038/nextflow-workshop-2025-04/project_NextFlow/pipeline/work/4f/2a595a0f67483f1096f2b9209cfcf2]
+May-11 23:30:55.754 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-11 23:30:55.852 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-11 23:30:55.852 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-11 23:30:55.855 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+May-11 23:30:55.856 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+May-11 23:30:55.861 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4h 48m 3s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=8 GB; ]
+May-11 23:30:56.068 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-11 23:30:56.076 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-11 23:30:56.077 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

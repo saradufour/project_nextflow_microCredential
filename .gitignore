@@ -1,0 +1,5 @@
+#ignore files listed below
+work/
+*.raw
+.nextflow/
+pipeline/results/
