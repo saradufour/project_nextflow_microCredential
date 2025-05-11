@@ -21,7 +21,7 @@ export APPTAINER_CACHEDIR=${VSC_SCRATCH}/.apptainer_cache
 export APPTAINER_TMPDIR=${VSC_SCRATCH}/.apptainer_tmp
 ```
 
-note: the pipeline was tested on the donphan(interactive/debug) cluster using 1 node and 4 cores. Using 2 nodes and 8 cores would be beneficial for the runtime. It took 1h12min to run the example dataset. the example dataset can be downloaded [here] (https://cloud.cmb.ugent.be/index.php/s/i699Sa7FmQe4gzt).
+note: the pipeline was tested on the donphan(interactive/debug) cluster using 1 node and 4 cores. Using 2 nodes and 8 cores would be beneficial for the runtime. It took 1h12min to run the example dataset. the example dataset can be downloaded [here](https://cloud.cmb.ugent.be/index.php/s/i699Sa7FmQe4gzt).
 
 **Save the .raw files in the 'pipeline/data' folder and fill in the QC_list.csv file**
 
