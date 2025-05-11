@@ -4,10 +4,10 @@
 In the VIB Proteomics core, at least 2 DIAQC's hould be run on the LC-MS/MS equipment. An automated workflow is the most reproducible way to process the data. 
 
 ## set up
-step 1a: convert thermo .raw files to MZML file (thermoRawfileParser of nf-core)
-Step 1b: generate a predicted spectral library from a (reference) proteome file.
-step 2: combine the mzml files an the predicted spectral library to run the diann search.
-Step 3: add the report.stats.tsv file for visualization of the number of identified proteins per file. 
+- step 1a: convert thermo .raw files to MZML file (thermoRawfileParser of nf-core)
+- Step 1b: generate a predicted spectral library from a (reference) proteome file.
+- step 2: combine the mzml files an the predicted spectral library to run the diann search.
+- Step 3: add the report.stats.tsv file for visualization of the number of identified proteins per file. 
 
 
 ## Instructions
